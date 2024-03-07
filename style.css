@@ -1,0 +1,83 @@
+body{
+    background-image: url('airsnipe3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.headerBox{
+    background-color: rgb(100, 120, 100);
+    /* border-radius: 30px; */
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+
+}
+.speedsoftTitle{
+    color: white;
+    margin-left: 10%;
+    
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  50px;
+    margin-right: 5%;
+}
+
+
+.nav-button{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+    margin-right: 5%;
+}
+.nav-button:hover{
+    background-color: green;
+    color: white;
+
+}
+
+.rightBox{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: right;
+    /* width: 50%; */
+    /* position: fixed; */
+    height: 100%;
+}
+
+p{
+    text-wrap: wrap;
+}
+.box{
+    background-color: rgba(245, 245, 219,0.3);
+    display: box;
+    width: 40%;
+    height: 500px;
+    padding: 3%;
+    margin-top: 10%;
+    color: white;
+    font-size: 30px;
+    border-radius:50px;
+}
+
+#speedsoft-title{
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+
+
+
+.bar{
+    background-color: green;
+    height: 200px;
+}
