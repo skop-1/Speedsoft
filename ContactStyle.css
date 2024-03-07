@@ -2,14 +2,19 @@ body{
     background-image: url('airsnipe3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 .headerBox{
-    background-color: rgba(186, 255, 180, 0.3);
-    border-radius: 30px;
+    background-color: rgb(100, 120, 100);
+    /* border-radius: 30px; */
     padding: 10px;
     display:flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+
 }
 .speedsoftTitle{
     color: white;
@@ -20,6 +25,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap:  50px;
+    margin-right: 5%;
 }
 
 
@@ -32,16 +38,43 @@ nav {
     width: 150px;
     margin-right: 5%;
 }
+.nav-button:hover{
+    background-color: green;
+    color: white;
 
-.contact-us{
-    background-color: aqua;
+}
+
+
+.contactus{
+    background-color: rgba(100,200,255,0.8);
     padding:20px;
-    border-radius: 50px;
-    margin-top: 50px;
+    /* border-radius: 50px; */
+    margin-top: 100px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* align-content: space-around; */
     font-size: 50px;
+}
+
+.rightBox{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(100, 150, 150,0.7);
+    display: box;
+    width: 80%;
+    height: auto;
+    padding: 3%;
+    margin-top: 15%;
+    color: orange;
+    font-size: 30px;
+    border-radius:50px;
 }
