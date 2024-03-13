@@ -1,9 +1,33 @@
+html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 body{
-    background-image: url('airsnipe3.jpg');
+    background-image: url('airsnipe.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
     background-attachment: fixed;
-    margin: 0;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+h1{
+    text-shadow: 2px 2px black;
+}
+p{
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -47,13 +71,28 @@ nav {
 
 
 .nav-button:hover{
-    background-color: green;
+    background-image: linear-gradient(green,black);
     color: white;
 
 }
 
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .rightBox{
-    /* background-color: aqua; */
     display: flex;
     justify-content: right;
     height: 100%;
@@ -67,32 +106,39 @@ p{
 
 .box{
     background-color: rgba(245, 245, 219,0.3);
-    display: box;
-    width: 40%;
-    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 40vw;
     padding: 3%;
     margin-top: 10%;
+    margin-right: 5%;
     margin-bottom: 10%;
     color: white;
     font-size: 30px;
     border-radius:50px;
+
 }
 .box2{
     background-color: rgba(100, 120, 120,0.4);
-    display: box;
-    width: 40%;
-    padding: 5%;
-    margin-top: 20%;
+    width: 30vw;
+    padding: 5vh;
+    margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 10%;
+    margin-left: 5%;
     color: white;
     font-size: 30px;
     border-radius:50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .rightBox2{
     display: flex;
     justify-content: left;
-    height: 90%;
+    height: 90vh;
 }
 
 
@@ -100,15 +146,43 @@ p{
 #speedsoft-title{
     margin-top: 0px;
     font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 
 
-
 .bar{
-    background-image: url(Airsoft_squad.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: green;
     height: 100%;
+    width: 1000vh;
+
+}
+
+.bar-2{
+    height: 100%;
+
+}
+
+
+.two{
+    background-image: url(Airosft_grass.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.three{
+    background-image: url(Airsoft_ground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-size: cover;
+}
+.four{
+    background-image: url(Airosft_smoke.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-size: cover;
 }
