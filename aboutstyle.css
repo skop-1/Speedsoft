@@ -23,8 +23,15 @@ a{
 }
 
 h1{
-    text-shadow: 2px 2px black;
-    text-decoration: none;
+    text-shadow: 4px 4px black;
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 40px;
+    text-shadow: 3px 3px black;
 }
 .headerBox{
     background-color: rgb(100, 120, 100);
@@ -64,11 +71,70 @@ nav {
 }
 
 
-.nav-button:hover{
-    /* background-color: green; */
-    color: white;
-    background-image: linear-gradient(green,black);
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  50px;
+    margin-right: 5%;
+}
 
+
+.nav-button{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+    margin-right: 5%;
+    transition: transform 0.3s ease;
+    position: relative;
+    color: black;
+    box-shadow: 4px 7px black;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+
+.nav-button:hover{
+    /* background-image: linear-gradient(green,black); */
+    transform: scale(1.1);
+    background-color: lightgreen;
+}
+
+.rightBox2{
+    display: flex;
+    justify-content: left;
+    height: 90vh;
+}
+
+
+.box2{
+    /* background-color: rgba(100, 120, 120,0.4); */
+    background-color: rgba(20,20,20,0.3);
+    width: 30vw;
+    padding: 5vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    color: white;
+    font-size: 30px;
+    border-radius:50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.box2 h1{
+    letter-spacing: 2px;
+}
+
+#speedsoft-title{
+    margin-top: 0px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 
