@@ -19,15 +19,11 @@ body{
 }
 
 h1{
-    text-shadow: 4px 4px black;
-    display: flex;
-    justify-content: center;
+    text-shadow: 2px 2px black;
 }
 p{
-    color: white;
-    letter-spacing: 1px;
-    font-size: 40px;
-    text-shadow: 3px 3px black;
+    color: black;
+    text-shadow: 1px 1px white;
 }
 
 a{
@@ -45,14 +41,12 @@ a{
     position: fixed;
     width: 100%;
     height: 6vh;
-    z-index: 1;
 }
 
 
 .speedsoftTitle{
     color: white;
     margin-left: 10%;
-    text-shadow: 3px 3px black;
     
 }
 
@@ -73,14 +67,13 @@ nav {
     border-radius: 20px;
     text-align: center;
     width: 150px;
-    margin-right: 5%;
+    /* margin-right: 5%; */
+    margin-right: 5vw;
     transition: transform 0.3s ease;
     position: relative;
     color: black;
     box-shadow: 4px 7px black;
     transition: background-color 0.5s ease, transform 0.5s ease;
-    letter-spacing: 1px;
-    font-size: 15px;
 }
 
 
@@ -90,6 +83,51 @@ nav {
     background-color: lightgreen;
 }
 
+.headerMobile {
+    display: none;
+
+    background-color: rgb(100, 120, 100);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+}
+.headerMobile .speedsoftTitle {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerMobile h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerMobile div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2vh;
+}
+
+.mobileButton {
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    /* width: 150px; */
+    /* margin-right: 5%; */
+    position: relative;
+    color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 
 
@@ -98,7 +136,6 @@ nav {
     overflow-y: scroll;
     height: 100vh;
 }
-
 
 section{
     height: 100vh;
@@ -112,7 +149,7 @@ section{
 .rightBox{
     display: flex;
     justify-content: right;
-    height: 100%;
+    height: 90vh;
 }
 
 
@@ -122,8 +159,7 @@ p{
 
 
 .box{
-    /* background-color: rgba(245, 245, 219,0.3); */
-    background-color: rgba(20,20,20,0.3);
+    background-color: rgba(245, 245, 219,0.3);
     display: grid;
     justify-content: center;
     align-items: center;
@@ -132,21 +168,17 @@ p{
     margin-left: 40vw;
     padding: 3%;
     margin-top: 10%;
-    margin-right: 5%;
+    /* margin-right: 5%; */
     margin-bottom: 10%;
     color: white;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: clamp(30px, 5vw, 50px);
+    /* font-size: max(30px, 5vw); */
     border-radius:50px;
-    backdrop-filter: blur(2px);
-}
-.box h1 {
-    letter-spacing: 2px;
-}
 
-
+}
 .box2{
-    /* background-color: rgba(100, 120, 120,0.4); */
-    background-color: rgba(20,20,20,0.3);
+    background-color: rgba(100, 120, 120,0.4);
     width: 30vw;
     padding: 5vh;
     margin-top: 10%;
@@ -158,13 +190,7 @@ p{
     display: grid;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(2px);
 }
-.box2 h1{
-    letter-spacing: 2px;
-}
-
-
 .rightBox2{
     display: flex;
     justify-content: left;
@@ -173,11 +199,11 @@ p{
 
 
 
-#speedsoft-title{
+.speedsoft-title{
     margin-top: 0px;
     font-size: 50px;
-    display: flex;
-    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 
@@ -215,4 +241,61 @@ p{
     background-attachment: fixed;
     background-position-x: center;
     background-size: cover;
+}
+
+
+
+@media (max-width: 500px) {
+    .headerBox {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .headerMobile {
+        display: block;
+    }
+
+
+
+    .box{
+        background-color: rgba(245, 245, 219,0.6);
+        width: 85vw;
+        height: 70vh;
+        margin-left: 0;
+        padding: 5vw;
+        margin-top: 15vh;
+        margin-bottom: 10%;
+        color: white;
+        font-size: clamp(30px, 5vw, 50px);
+        border-radius:50px;
+    
+    }
+    .box2{
+        background-color: rgba(245, 245, 219,0.6);
+        width: 85vw;
+        height: 70vh;
+        padding: 5vh;
+        margin-top: 15vh;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: white;
+        font-size: 30px;
+        border-radius:50px;
+    }
+
+    .rightBox{
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightBox2{
+        display: flex;
+        justify-content: center;
+    }
+
+    
 }

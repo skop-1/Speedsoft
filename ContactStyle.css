@@ -80,8 +80,6 @@ nav {
     color: black;
     box-shadow: 4px 7px black;
     transition: background-color 0.5s ease, transform 0.5s ease;
-    letter-spacing: 1px;
-    font-size: 15px;
 }
 
 
@@ -145,12 +143,12 @@ nav {
     background-color: rgba(100, 150, 150,0.8);
     width: 650px;
     height: 500px;
-    padding: 50px;
+    padding: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 80px;
 }
 .mapbox iframe{
-    border-radius: 50px;
+    border-radius: calc(80px - 2vw);
 }
